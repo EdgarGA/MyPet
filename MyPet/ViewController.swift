@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     var hello = "Hello World"
     var doyou = "hi"
+    var oli = "sof"
 
     override func viewDidLoad() {
         super.viewDidLoad()
