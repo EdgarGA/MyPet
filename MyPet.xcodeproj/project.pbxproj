@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		611BB7801CBC9E7400DE65EB /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611BB77F1CBC9E7400DE65EB /* MaterialView.swift */; };
+		611BB7831CBC9ED200DE65EB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611BB7821CBC9ED200DE65EB /* Constants.swift */; };
+		611BB7851CBCA1E300DE65EB /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611BB7841CBCA1E300DE65EB /* MaterialButton.swift */; };
 		61F3AC6E1CBB261000677E99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F3AC6D1CBB261000677E99 /* AppDelegate.swift */; };
 		61F3AC701CBB261000677E99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F3AC6F1CBB261000677E99 /* ViewController.swift */; };
 		61F3AC731CBB261000677E99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61F3AC711CBB261000677E99 /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		611BB77F1CBC9E7400DE65EB /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		611BB7821CBC9ED200DE65EB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		611BB7841CBCA1E300DE65EB /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		61F3AC6A1CBB261000677E99 /* MyPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F3AC6D1CBB261000677E99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61F3AC6F1CBB261000677E99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,9 +82,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		611BB77B1CBC8AD000DE65EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		611BB77C1CBC8AD500DE65EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				611BB77F1CBC9E7400DE65EB /* MaterialView.swift */,
+				611BB7841CBCA1E300DE65EB /* MaterialButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		611BB77D1CBC8ADA00DE65EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		611BB77E1CBC8AEE00DE65EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		611BB7811CBC9EBA00DE65EB /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				611BB7821CBC9ED200DE65EB /* Constants.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		61F3AC611CBB261000677E99 = {
 			isa = PBXGroup;
 			children = (
+				611BB7811CBC9EBA00DE65EB /* Util */,
+				611BB77E1CBC8AEE00DE65EB /* Resources */,
+				611BB77C1CBC8AD500DE65EB /* View */,
+				611BB77B1CBC8AD000DE65EB /* Model */,
+				611BB77D1CBC8ADA00DE65EB /* Controller */,
 				61F3AC6C1CBB261000677E99 /* MyPet */,
 				61F3AC841CBB261000677E99 /* MyPetTests */,
 				61F3AC8F1CBB261000677E99 /* MyPetUITests */,
@@ -259,9 +308,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				611BB7831CBC9ED200DE65EB /* Constants.swift in Sources */,
 				61F3AC701CBB261000677E99 /* ViewController.swift in Sources */,
+				611BB7851CBCA1E300DE65EB /* MaterialButton.swift in Sources */,
 				61F3AC6E1CBB261000677E99 /* AppDelegate.swift in Sources */,
 				61F3AC761CBB261000677E99 /* MyPet.xcdatamodeld in Sources */,
+				611BB7801CBC9E7400DE65EB /* MaterialView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +540,7 @@
 				61F3AC971CBB261000677E99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61F3AC981CBB261000677E99 /* Build configuration list for PBXNativeTarget "MyPetTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +549,7 @@
 				61F3AC9A1CBB261000677E99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61F3AC9B1CBB261000677E99 /* Build configuration list for PBXNativeTarget "MyPetUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +558,7 @@
 				61F3AC9D1CBB261000677E99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
