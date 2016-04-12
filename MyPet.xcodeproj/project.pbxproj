@@ -10,6 +10,9 @@
 		611BB7801CBC9E7400DE65EB /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611BB77F1CBC9E7400DE65EB /* MaterialView.swift */; };
 		611BB7831CBC9ED200DE65EB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611BB7821CBC9ED200DE65EB /* Constants.swift */; };
 		611BB7851CBCA1E300DE65EB /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611BB7841CBCA1E300DE65EB /* MaterialButton.swift */; };
+		61ED04C11CBD4F950099A0DB /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ED04B51CBD4F950099A0DB /* HoshiTextField.swift */; };
+		61ED04C21CBD4F950099A0DB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61ED04B61CBD4F950099A0DB /* Info.plist */; };
+		61ED04C81CBD4F950099A0DB /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ED04BD1CBD4F950099A0DB /* TextFieldsEffects.swift */; };
 		61F3AC6E1CBB261000677E99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F3AC6D1CBB261000677E99 /* AppDelegate.swift */; };
 		61F3AC701CBB261000677E99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F3AC6F1CBB261000677E99 /* ViewController.swift */; };
 		61F3AC731CBB261000677E99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61F3AC711CBB261000677E99 /* Main.storyboard */; };
@@ -41,6 +44,9 @@
 		611BB77F1CBC9E7400DE65EB /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		611BB7821CBC9ED200DE65EB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		611BB7841CBCA1E300DE65EB /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		61ED04B51CBD4F950099A0DB /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
+		61ED04B61CBD4F950099A0DB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61ED04BD1CBD4F950099A0DB /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsEffects.swift; sourceTree = "<group>"; };
 		61F3AC6A1CBB261000677E99 /* MyPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F3AC6D1CBB261000677E99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61F3AC6F1CBB261000677E99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 			children = (
 				611BB77F1CBC9E7400DE65EB /* MaterialView.swift */,
 				611BB7841CBCA1E300DE65EB /* MaterialButton.swift */,
+				61ED04B31CBD4F950099A0DB /* TextFieldEffects */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -118,6 +125,16 @@
 				611BB7821CBC9ED200DE65EB /* Constants.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		61ED04B31CBD4F950099A0DB /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				61ED04BD1CBD4F950099A0DB /* TextFieldsEffects.swift */,
+				61ED04B51CBD4F950099A0DB /* HoshiTextField.swift */,
+				61ED04B61CBD4F950099A0DB /* Info.plist */,
+			);
+			path = TextFieldEffects;
 			sourceTree = "<group>";
 		};
 		61F3AC611CBB261000677E99 = {
@@ -281,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61ED04C21CBD4F950099A0DB /* Info.plist in Resources */,
 				61F3AC7B1CBB261000677E99 /* LaunchScreen.storyboard in Resources */,
 				61F3AC781CBB261000677E99 /* Assets.xcassets in Resources */,
 				61F3AC731CBB261000677E99 /* Main.storyboard in Resources */,
@@ -310,8 +328,10 @@
 			files = (
 				611BB7831CBC9ED200DE65EB /* Constants.swift in Sources */,
 				61F3AC701CBB261000677E99 /* ViewController.swift in Sources */,
+				61ED04C11CBD4F950099A0DB /* HoshiTextField.swift in Sources */,
 				611BB7851CBCA1E300DE65EB /* MaterialButton.swift in Sources */,
 				61F3AC6E1CBB261000677E99 /* AppDelegate.swift in Sources */,
+				61ED04C81CBD4F950099A0DB /* TextFieldsEffects.swift in Sources */,
 				61F3AC761CBB261000677E99 /* MyPet.xcdatamodeld in Sources */,
 				611BB7801CBC9E7400DE65EB /* MaterialView.swift in Sources */,
 			);
@@ -461,6 +481,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.edgargante.MyPet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -472,6 +493,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.edgargante.MyPet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

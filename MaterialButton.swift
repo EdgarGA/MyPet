@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MaterialButton: UIButton {
+@IBDesignable class MaterialButton: UIButton {
     
     override func awakeFromNib() {
         layer.cornerRadius = 2.0

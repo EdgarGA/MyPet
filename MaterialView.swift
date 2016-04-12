@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MaterialView: UIView {
+@IBDesignable class MaterialView: UIView {
     
     override func awakeFromNib() {
         layer.cornerRadius = 2.0
